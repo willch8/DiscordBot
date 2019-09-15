@@ -10,6 +10,9 @@ from discord.utils import get
 import youtube_dl
 import os
 
+#defined file in project directory
+import constants
+
 DEFAULT_ROLE = "bums"
 
 client = commands.Bot(command_prefix = '/')
@@ -77,4 +80,4 @@ async def leave(ctx):
         await ctx.send("I don't even know where you sitting at")
 
 #add token
-client.run('NjIyMzQ4MjQzMjc5MjgyMTg4.XXym4A.ud1RvEr-o20PszyzlXEyciVbHyg')
+client.run(constants.BOTCODE)
